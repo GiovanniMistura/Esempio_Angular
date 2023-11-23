@@ -1,0 +1,21 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 64px);
+}
+
+#content {
+    max-width: 300px;
+}
+
+button {
+    width: 100%;
+}
+
+h4 {
+    align-items: center;
+}
+
+
+

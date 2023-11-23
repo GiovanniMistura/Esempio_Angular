@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <span>
+        <a *ngIf="!currentId" routerLink="/">ChatGPI</a>
+        <a *ngIf="currentId" routerLink="/chat">ChatGPI</a>
+    </span>
+    <span class="spacer"></span>
+    <span *ngIf="!currentId" class="menu-item" >
+        <a class="pointer" routerLink=" ">Nuovo Profilo</a>
+    </span>
+    <span *ngIf="currentId" class="menu-item" >
+        <a class="pointer" routerLink="/chat">Chat</a>
+    </span>
+    <span *ngIf="currentId" class="menu-item" >
+        <a class="pointer" (click) ="gotToProfile()">Il mio Profilo</a>
+    </span>
+    <span *ngIf="currentId" class="menu-item" >
+        <a class="pointer" (click)="goToLogOut()">log Out</a>
+    </span>
+</mat-toolbar>
+
+
